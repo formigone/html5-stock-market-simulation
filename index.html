@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+  <title>StockExchangeSimulator</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+
+<div id="top">
+  <div id="header">
+    <div class="shell">
+      <h1>BYU Idaho: CS460 Final Project</h1>
+      <p>Copyright &copy; 2011 Rodrigo Silveira. All rights reserved. http://www.rodrigo-silveira.com</p>
+    </div>
+  </div>
+
+  <div id="main" class="shell">
+
+    <div class="stock">
+      <h1><span id="stockComp1Sym"></span></h1>
+      <p id="stockComp1Chg" class="shareChange gain">0.00</p>
+
+      <table class="profile">
+        <tr><td>Volume</td><td id="stockComp1Vol">25</td></tr>
+        <tr><td>Ask</td><td id="stockComp1Ask"></td></tr>
+        <tr><td>Bid</td><td id="stockComp1Bid"></td></tr>
+      </table>
+
+      <div class="inpanel" id="inpanelFor1">
+        <table class="transaction" id="tableToBuyFor1" style="display:none">
+          <tr><td>Volume</td><td id="stockCompBuyVol1">25</td></tr>
+          <tr><td>Total</td><td id="stockCompBuyTot1"></td></tr>
+          <tr><td>My Cash</td><td id="stockCompBuyMycash1"></td></tr>
+          <tr><td colspan="2" style="text-align:center"><input type="range" min="1" max="100" step="1" value="25" id="stockCompBuySlid1"/></td></tr>
+        </table>
+
+        <table class="transaction" id="tableToSellFor1" style="display:none">
+          <tr><td>Volume</td><td id="stockCompSellVol1">25</td></tr>
+          <tr><td>Total</td><td id="stockCompSellTot1"></td></tr>
+          <tr><td>My Shares</td><td id="stockCompSellMyshares1"></td></tr>
+          <tr><td colspan="2" style="text-align:center"><input type="range" min="1" max="100" step="1" value="25" id="stockCompSellSlid1"/></td></tr>
+        </table>
+      </div>
+
+      <div class="action" id="actionForComp1">
+        <div class="initTrans" id="trans1For1">
+          <button class="stockCompBtnBuy1"><span>BUY</span></button>
+          <button class="stockCompBtnSell1"><span>SELL</span></button>
+        </div>
+
+        <div class="confirmBuy" id="trans2BuyFor1" style="display:none">
+          <button class="stockCompBtnBuy2"><span>BUY</span></button>
+          <button class="stockCompBtnCancel"><span>CANCEL</span></button>
+        </div>
+
+        <div class="confirmSell" id="trans2SellFor1" style="display:none">
+          <button class="stockCompBtnCancel"><span>CANCEL</span></button>
+          <button class="stockCompBtnSell2"><span>SELL</span></button>
+        </div>
+      </div>
+
+      <div class="shadow">
+      </div>
+    </div>
+
+    <div class="stock">
+      <h1><span id="stockComp2Sym"></span></h1>
+      <p id="stockComp2Chg" class="shareChange gain">0.00</p>
+
+      <table class="profile">
+        <tr><td>Volume</td><td id="stockComp2Vol">25</td></tr>
+        <tr><td>Ask</td><td id="stockComp2Ask"></td></tr>
+        <tr><td>Bid</td><td id="stockComp2Bid"></td></tr>
+      </table>
+
+      <div class="inpanel" id="inpanelFor2">
+        <table class="transaction" id="tableToBuyFor2" style="display:none">
+          <tr><td>Volume</td><td id="stockCompBuyVol2">25</td></tr>
+          <tr><td>Total</td><td id="stockCompBuyTot2"></td></tr>
+          <tr><td>My Cash</td><td id="stockCompBuyMycash2"></td></tr>
+          <tr><td colspan="2" style="text-align:center"><input type="range" min="1" max="100" step="1" value="25" id="stockCompBuySlid2"/></td></tr>
+        </table>
+
+        <table class="transaction" id="tableToSellFor2" style="display:none">
+          <tr><td>Volume</td><td id="stockCompSellVol2">25</td></tr>
+          <tr><td>Total</td><td id="stockCompSellTot2"></td></tr>
+          <tr><td>My Shares</td><td id="stockCompSellMyshares2"></td></tr>
+          <tr><td colspan="2" style="text-align:center"><input type="range" min="1" max="100" step="1" value="25" id="stockCompSellSlid2"/></td></tr>
+        </table>
+      </div>
+
+      <div class="action" id="actionForComp2">
+        <div class="initTrans" id="trans1For2">
+          <button class="stockCompBtnBuy1"><span>BUY</span></button>
+          <button class="stockCompBtnSell1"><span>SELL</span></button>
+        </div>
+
+        <div class="confirmBuy" id="trans2BuyFor2" style="display:none">
+          <button class="stockCompBtnBuy2"><span>BUY</span></button>
+          <button class="stockCompBtnCancel"><span>CANCEL</span></button>
+        </div>
+
+        <div class="confirmSell" id="trans2SellFor2" style="display:none">
+          <button class="stockCompBtnCancel"><span>CANCEL</span></button>
+          <button class="stockCompBtnSell2"><span>SELL</span></button>
+        </div>
+      </div>
+
+      <div class="shadow">
+      </div>
+    </div>
+
+    <div class="stock">
+      <h1><span id="stockComp3Sym"></span></h1>
+      <p id="stockComp3Chg" class="shareChange gain">0.00</p>
+
+      <table class="profile">
+        <tr><td>Volume</td><td id="stockComp3Vol">25</td></tr>
+        <tr><td>Ask</td><td id="stockComp3Ask"></td></tr>
+        <tr><td>Bid</td><td id="stockComp3Bid"></td></tr>
+      </table>
+
+      <div class="inpanel" id="inpanelFor3">
+        <table class="transaction" id="tableToBuyFor3" style="display:none">
+          <tr><td>Volume</td><td id="stockCompBuyVol3">25</td></tr>
+          <tr><td>Total</td><td id="stockCompBuyTot3"></td></tr>
+          <tr><td>My Cash</td><td id="stockCompBuyMycash3"></td></tr>
+          <tr><td colspan="2" style="text-align:center"><input type="range" min="1" max="100" step="1" value="25" id="stockCompBuySlid3"/></td></tr>
+        </table>
+
+        <table class="transaction" id="tableToSellFor3" style="display:none">
+          <tr><td>Volume</td><td id="stockCompSellVol3">25</td></tr>
+          <tr><td>Total</td><td id="stockCompSellTot3"></td></tr>
+          <tr><td>My Shares</td><td id="stockCompSellMyshares3"></td></tr>
+          <tr><td colspan="2" style="text-align:center"><input type="range" min="1" max="100" step="1" value="25" id="stockCompSellSlid3"/></td></tr>
+        </table>
+      </div>
+
+      <div class="action" id="actionForComp3">
+        <div class="initTrans" id="trans1For3">
+          <button class="stockCompBtnBuy1"><span>BUY</span></button>
+          <button class="stockCompBtnSell1"><span>SELL</span></button>
+        </div>
+
+        <div class="confirmBuy" id="trans2BuyFor3" style="display:none">
+          <button class="stockCompBtnBuy2"><span>BUY</span></button>
+          <button class="stockCompBtnCancel"><span>CANCEL</span></button>
+        </div>
+
+        <div class="confirmSell" id="trans2SellFor3" style="display:none">
+          <button class="stockCompBtnCancel"><span>CANCEL</span></button>
+          <button class="stockCompBtnSell2"><span>SELL</span></button>
+        </div>
+      </div>
+
+      <div class="shadow">
+      </div>
+    </div>
+
+  </div>
+
+  <div id="stretch"></div>
+</div>
+
+<div id="bottom">
+  <div class="shell">
+
+    <div id="dashboard">
+
+     <div id="panelLeft">
+       <h1>My Cash</h1>
+       <p id="mycash"></p>
+     </div>
+
+     <div id="panelRight">
+       <h1>My Portfolio</h1>
+         <table>
+           <tr><td></td><td>Volume</td><td>Price</td></tr>
+           <tr><td style="width:400px" id="portComp1Sym"></td><td style="width:75px" id="portCompVol1"></td><td style="width:75px" id="portCompPric1"></td></tr>
+           <tr><td id="portComp2Sym"></td><td id="portCompVol2"></td><td id="portCompPric2"></td></tr>
+           <tr><td id="portComp3Sym"></td><td id="portCompVol3"></td><td id="portCompPric3"></td></tr>
+         </table>
+     </div>
+
+    </div>
+
+    <div id="dialog">
+      <div id="messages"></div>
+
+      <div id="status"></div>
+
+    </div>
+
+  </div>
+</div>
+
+<div id="alert">
+  <div id="alertShell">
+    <h1><span id="alertTitle">alert title</span><b>!</b></h1>
+    <div id="message">
+      <p id="alertMessage">alert message</p>
+      <button><span>OK</span></button>
+      <br/>
+    </div>
+  </div>
+</div>
+
+</body>
+<script type="text/javascript" src="js/jq162.js"></script>
+<script type="text/javascript" src="js/logic.js"></script>
+</html>
